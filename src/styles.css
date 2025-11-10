@@ -1,0 +1,138 @@
+/* src/styles.css */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #3a3a3a;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #3a3a3a;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+  
+  .nav-bar {
+    background-color: #f9f7f1;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-bar li {
+    font-weight: 600;
+  }
+  
+  .nav-bar .active {
+    border-bottom: 2px solid #6b8e23;
+    color: #6b8e23;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .home h1,
+  .gallery h2,
+  .about h2,
+  .story h2,
+  .contact h2 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro-text {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.25rem;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .artwork-item {
+    background: #faf9f6;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    outline-offset: 2px;
+  }
+  
+  .artwork-item:focus-within {
+    outline: 2px solid #6b8e23;
+  }
+  
+  .artwork-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 0.25rem;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #6b8e23;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  button:hover,
+  button:focus {
+    background-color: #557a1c;
+    outline: none;
+  }
+  
