@@ -2,7 +2,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
-import NavBar from "./components/temp.jsx";
+import NavBar from "./components/NavBar.jsx";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About.jsx";
