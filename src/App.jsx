@@ -1,28 +1,40 @@
-// src/App.jsx
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
-import Home from "./pages/Home";
-import Gallery from "./pages/Gallery";
+import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import Gallery from "./pages/Gallery.jsx";
 import About from "./pages/About.jsx";
-import Story from "./pages/Story";
-import Contact from "./pages/Contact";
+import Story from "./pages/Story.jsx";
+import Contact from "./pages/Contact.jsx";
+
+function RootLayout() {
+  return (
+    <>
+    <div className="min-h-screen flex flex-col font-sans">
+      <NavBar />
+      <main className="flex-grow container mx-auto px-4 py-6">
+        <Outlet />
+      </main>
+    </div>
+    <Footer />
+    </>
+  );
+}
+
+const router = createBrowserRouter([
+  {
+    element: <RootLayout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/gallery", element: <Gallery /> },
+      { path: "/about", element: <About /> },
+      { path: "/story", element: <Story /> },
+      { path: "/contact", element: <Contact /> },
+    ],
+  },
+]);
 
 export default function App() {
-  return (
-    <div className="app-container" tabIndex={0}>
-      <NavBar />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/story" element={<Story />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }

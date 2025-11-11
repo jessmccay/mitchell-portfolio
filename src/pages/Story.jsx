@@ -1,19 +1,17 @@
-// src/pages/Story.jsx
 import React from "react";
 
 export default function Story() {
   return (
-    <section className="story" aria-labelledby="story-title">
-      <h2 id="story-title">Mitchell's Story</h2>
-      <blockquote>
-        <p>
-          "Art is my voice and my freedom. Painting with my mouth challenges me every day, but it has given me
-          a way to express my identity and inspire others."
-        </p>
-      </blockquote>
+    <section className="prose max-w-none mx-auto">
+      <h1>Mitchell's Story</h1>
       <p>
-        Mitchell’s journey as a quadriplegic artist is one of triumph over adversity, rooted in his rich Native
-        American heritage and his unyielding creative spirit.
+        From a young age, Mitchell faced challenges most cannot imagine. Despite being a quadriplegic, he channelled his energy into painting, mastering the technique of mouth painting with extraordinary skill.
+      </p>
+      <p>
+        His journey is not only about art but about the triumph of human will and the power of creativity to transcend limits.
+      </p>
+      <p>
+        Through this website, you can explore his immersive landscape creations, Native American inspired pieces, and learn about the milestones and moments that shaped his artistic path.
       </p>
     </section>
   );

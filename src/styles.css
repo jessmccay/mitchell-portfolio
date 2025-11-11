@@ -1,12 +1,64 @@
 /* src/styles.css */
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #fff;
-    color: #3a3a3a;
-    line-height: 1.5;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #0000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  img {
+    border-radius: 5%;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* or flex-start */
+    align-items: flex-start;
+    gap: 1rem;
   }
   
+  .mitchpaints {
+    height: 400px;
+    flex-shrink: 0; /* keep image fixed size */
+    margin-top: 10%;
+  }
+  
+  .home-group {
+    background-color: black;
+    flex-grow: 1;
+    width: auto; /* avoid fixed width to fill available space */
+    margin-left: 10%;
+  }
+  .mitchintro {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; 
+  }
+  .boxes {
+    display: flex;
+    flex-direction: row;  
+  }
+  .box1 {
+    background-color: red;
+    height: 200px;
+    width: 220px;
+  }
+  .box2 {
+    background-color: yellow;
+    height: 200px;
+    width: 220px;
+  }
+  .box3 {
+    background-color: black;
+    height: 200px;
+    width: 220px;
+  }
+  .box4 {
+    background-color: white;
+    height: 200px;
+    width: 220px;
+  }
   a {
     color: #3a3a3a;
     text-decoration: none;
@@ -18,7 +70,8 @@ body {
   }
   
   .nav-bar {
-    background-color: #f9f7f1;
+    background-color: black;
+    color: #eee;
     border-bottom: 1px solid #ddd;
     padding: 1rem 2rem;
     position: sticky;
@@ -34,18 +87,13 @@ body {
     gap: 2rem;
   }
   
-  .nav-bar li {
+  .nav li {
     font-weight: 600;
   }
   
-  .nav-bar .active {
-    border-bottom: 2px solid #6b8e23;
-    color: #6b8e23;
-  }
   
   main {
-    padding: 2rem;
-    max-width: 1000px;
+    padding: 2rem;  
     margin: 0 auto;
   }
   
@@ -64,12 +112,6 @@ body {
   .contact h2 {
     font-weight: 700;
     margin-bottom: 0.5rem;
-  }
-  
-  .intro-text {
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    font-size: 1.25rem;
   }
   
   .hero-image {
@@ -135,4 +177,21 @@ body {
     background-color: #557a1c;
     outline: none;
   }
-  
+
+  .dancer-group {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .cowbodyquad {
+    height: 200px;
+    width: max-content;
+    box-shadow: 0 10px 8px rgba(0,0,0,0.1);
+  }
+  .dancers{
+    width: 200px;
+    height: auto;
+    margin-top: 5%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }

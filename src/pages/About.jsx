@@ -1,18 +1,17 @@
-// src/pages/About.jsx
 import React from "react";
 
 export default function About() {
   return (
-    <section className="about" aria-labelledby="about-title">
-      <h2 id="about-title">About the Artist</h2>
+    <section className="prose max-w-none mx-auto">
+      <h1>About Mitchell</h1>
       <p>
-        Mitchell is a proud Native American artist who, despite living with quadriplegia, creates breathtaking
-        paintings by holding his brush with his mouth. His art honors his cultural heritage and reflects his
-        deep connection to the landscapes he loves.
+        Mitchell is a gifted artist with a unique story. Born with physical challenges, he creates breathtaking Native American and landscape paintings using only his mouth to hold the brush.
       </p>
       <p>
-        His painting process is a unique blend of determination, skill, and passion, using tools adapted to his
-        abilities to bring his visions to life.
+        His artwork showcases incredible determination and artistic vision, inspiring many with its beauty and depth.
+      </p>
+      <p>
+        This portfolio exhibits Mitchell's journey, creativity, and passion for art, reflecting more than talent—it tells the story of resilience and spirit.
       </p>
     </section>
   );

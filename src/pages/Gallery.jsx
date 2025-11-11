@@ -1,11 +1,13 @@
 // src/pages/Gallery.jsx
 import React from "react";
+import art1 from '../assets/images/art1.png';
+
 
 const artworks = [
   {
     id: 1,
     title: "Morning Mist Over Mountains",
-    src: "/images/art1.jpg",
+    src: art1,
     description: "An ethereal landscape of misty mountains at dawn.",
   },
   {
