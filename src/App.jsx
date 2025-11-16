@@ -1,3 +1,4 @@
+// App.jsx
 import React from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
@@ -11,16 +12,17 @@ import Contact from "./pages/Contact.jsx";
 function RootLayout() {
   return (
     <>
-    <div className="min-h-screen flex flex-col font-sans">
-      <NavBar />
-      <main className="flex-grow container mx-auto px-4 py-6">
-        <Outlet />
-      </main>
-    </div>
-    <Footer />
+      <div className="min-h-screen flex flex-col font-sans">
+        <NavBar />
+        <div className="flex-grow p-0 m-0">
+          <Outlet />
+        </div>
+      </div>
+      <Footer />
     </>
   );
 }
+
 
 const router = createBrowserRouter([
   {

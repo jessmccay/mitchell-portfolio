@@ -1,95 +1,74 @@
 /* src/styles.css */
+@import "tailwindcss";
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #0000;
-    background-repeat: no-repeat;
     background-attachment: fixed;
   }
 
-  img {
-    border-radius: 5%;
-  }
 
-  .home-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* or flex-start */
-    align-items: flex-start;
-    gap: 1rem;
+.dancer-group {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dancers {
+  border-m : 8px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dancers:hover {
+  transform: scale(1.04);
+}
+
+/* Page description */
+.home-desc {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #6b4f35;
+  padding: 1.5rem 2rem 2rem 2rem;
+}
+
+/* Make everything responsive */
+@media (max-width: 900px) {
+  .dancers {
+    width: 80px;
   }
-  
-  .mitchpaints {
-    height: 400px;
-    flex-shrink: 0; /* keep image fixed size */
-    margin-top: 10%;
-  }
-  
-  .home-group {
-    background-color: black;
-    flex-grow: 1;
-    width: auto; /* avoid fixed width to fill available space */
-    margin-left: 10%;
-  }
-  .mitchintro {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem; 
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    padding: 1rem;
   }
   .boxes {
-    display: flex;
-    flex-direction: row;  
+    flex-direction: column;
+    gap: 0.8rem;
   }
-  .box1 {
-    background-color: red;
-    height: 200px;
-    width: 220px;
+  .dancer-group {
+    gap: 0.6rem;
   }
-  .box2 {
-    background-color: yellow;
-    height: 200px;
-    width: 220px;
+  .dancers {
+    width: 60px;
   }
-  .box3 {
-    background-color: black;
-    height: 200px;
-    width: 220px;
-  }
-  .box4 {
-    background-color: white;
-    height: 200px;
-    width: 220px;
-  }
+}
+
+
   a {
     color: #3a3a3a;
     text-decoration: none;
   }
-  
+
   a:hover,
   a:focus {
     text-decoration: underline;
   }
   
-  .nav-bar {
-    background-color: black;
-    color: #eee;
-    border-bottom: 1px solid #ddd;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  
-  .nav-bar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .nav li {
-    font-weight: 600;
-  }
+
   
   
   main {
@@ -114,11 +93,7 @@ body {
     margin-bottom: 0.5rem;
   }
   
-  .hero-image {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
+
   
   .gallery-grid {
     display: grid;
@@ -178,20 +153,3 @@ body {
     outline: none;
   }
 
-  .dancer-group {
-    display: flex;
-    justify-content: space-around;
-    
-  }
-  .cowbodyquad {
-    height: 200px;
-    width: max-content;
-    box-shadow: 0 10px 8px rgba(0,0,0,0.1);
-  }
-  .dancers{
-    width: 200px;
-    height: auto;
-    margin-top: 5%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }

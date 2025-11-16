@@ -1,3 +1,4 @@
+ /* NavBar.jsx */
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
@@ -6,9 +7,9 @@ const navItems = ["Home", "Gallery", "About", "Story", "Contact"];
 
 export default function NavBar() {
   return (
-    <nav className="nav-bar">
+    <nav className="bg-white sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <ul className="flex items-center space-x-6 py-4">
+        <ul className="flex items-center space-x-8 py-4">
           {navItems.map((item) => {
             const path = item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s/g, "-")}`;
             return (
@@ -23,14 +24,13 @@ export default function NavBar() {
                   }
                 >
                   {item}
-                  
                 </NavLink>
               </li>
             );
           })}
-             <li className="ml-auto">
+          <li className="ml-auto">
             <NavLink
-              to="/cart" // or whatever your cart path is
+              to="/cart"
               className="text-gray-600 hover:text-blue-500"
               aria-label="Shopping Cart"
             >
