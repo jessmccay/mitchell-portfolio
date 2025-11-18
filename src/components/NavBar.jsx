@@ -7,7 +7,7 @@ const navItems = ["Home", "Gallery", "About", "Story", "Contact"];
 
 export default function NavBar() {
   return (
-    <nav className="bg-white sticky top-0 z-50">
+    <nav className="bg-olive sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <ul className="flex items-center space-x-8 py-4">
           {navItems.map((item) => {
