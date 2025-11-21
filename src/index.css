@@ -10,6 +10,15 @@
     --color-blush: #F6ECE5;
     --color-stone: #E2E5E9;
     --color-gold: #E8B059;
+    --color-deepEarthBlack: #1C1C1C;
+    --color-WarmBoneWhite: #F4F1EC;
+    --color-ClayRed: #8B3A2F;
+    --color-SoftSage: #6F7E6C;
+    --color-WarmCopper: #B87333;
+    --color-StormGray: #54575A;
+    --font-serif: "Playfair Display", serif;
+    --font-sans: Inter, system-ui, sans-serif;
+    --font-accent: Cormorant, serif;
  }
 
 :root {

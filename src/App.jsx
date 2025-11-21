@@ -12,7 +12,7 @@ import Contact from "./pages/Contact.jsx";
 function RootLayout() {
   return (
     <>
-      <div className="min-h-screen flex flex-col font-sans">
+      <div className="min-h-screen flex flex-col">
         <NavBar />
         <div className="flex-grow p-0 m-0">
           <Outlet />
